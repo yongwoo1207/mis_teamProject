@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professor's bookshelf</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link href="style_index.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- 내비게이션바 -->
+    <nav class="navbar navbar-expand-lg bg-light fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Open_book_nae_02.svg/250px-Open_book_nae_02.svg.png" width="60" height="60"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center" id="group_nav">
+                <li class="nav-item" id="main_title">
+                    <h4>Professor's bookshelf</h4>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">홈</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="intro/intro.html">회사소개</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">전공별 서적</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="biz.html">경영학과</a></li>
+                        <li><a class="dropdown-item" href="sport.html">스포츠과학과</a></li>
+                        <li><a class="dropdown-item" href="admin.html">행정학과</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="bestsell.html">베스트셀러</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="second.html">중고책</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <input class="form-control me-2" type="search" placeholder="검색" aria-label="Search">
+                    </li>
+                    <li>
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="https://www.yes24.com/Templates/FTLogin.aspx">login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="https://www.yes24.com/Member/Join/Accept.aspx">Join</a>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+    </nav>
+
+  <!-- 홈 메인 이미지 및 텍스트 -->
+    <header class="masthead">
+    <div class="container">
+      <div class="masthead-subheading text-uppercase">Welcome To Our Site!</div>
+      <div class="masthead-heading text-uppercase">We are Professor's bookshelf</div>
+    </header>
+          <!-- Portfolio Grid-->
+    <section class="page-section bg-light" id="portfolio" style="text-align:center">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">New Arrivals</h2>
+                <h3 class="section-subheading text-muted">You can find some new books</h3>
+        </div>
+    <!-- 이미지 슬라이드 부분 -->
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner" id="slid_box">
+            <div class="carousel-item active">
+                <div class="d-flex justify-content-center">
+                    <div class="col mb-5" id="slid_item">
+                    <div class="card h-100">
+                        <!-- NEW badge-->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">NEW</div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="img\book17.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">마이클샌델의 <br>당신이 모르는 민주주의</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                </div>
+                                <!-- Product price-->
+                                ￦50,000
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="http://www.yes24.com/Product/Goods/117948245">자세히보기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5" id="slid_item">
+                  <div class="card h-100">
+                      <!-- NEW badge-->
+                      <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">NEW</div>
+                      <!-- Product image-->
+                      <img class="card-img-top" src="img\book15.jpg" alt="..." />
+                      <!-- Product details-->
+                      <div class="card-body p-4">
+                          <div class="text-center">
+                              <!-- Product name-->
+                              <h5 class="fw-bolder">IFRS 중급회계</h5>
+                              <!-- Product reviews-->
+                              <div class="d-flex justify-content-center small text-warning mb-2">
+                                  <div class="bi-star-fill"></div>
+                                  <div class="bi-star-fill"></div>
+                                  <div class="bi-star-fill"></div>
+                                  <div class="bi-star-fill"></div>
+                                  <div class="bi-star-fill"></div>
+                              </div>
+                              <!-- Product price-->
+                              ￦39,000
+                          </div>
+                      </div>
+                      <!-- Product actions-->
+                      <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                          <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="https://shopping.interpark.com/product/productInfo.do?prdNo=11523255712&dispNo=016001&bizCd=P14782&NaPm=ct%3Dlhvl6vlc%7Cci%3D9a07a9c93f171d5d2ec7760743550744760c1a21%7Ctr%3Dboksl%7Csn%3D3%7Chk%3D26a11104c9dc1ed524149b8bc1347b609fea786c&utm_medium=affiliate&utm_source=naver&utm_campaign=shop_20220915_navershoppingbook_p14782_cps&utm_content=conversion_47">자세히보기</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col mb-5" id="slid_item">
+                <div class="card h-100">
+                    <!-- NEW badge-->
+                    <div class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">HOT</div>
+                    <!-- Product image-->
+                    <img class="card-img-top" src="img\book16.jpg" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">마이클포터의 경쟁우위</h5>
+                            <!-- Product reviews-->
+                            <div class="d-flex justify-content-center small text-warning mb-2">
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                            </div>
+                            <!-- Product price-->
+                            ￦57,000
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="http://www.yes24.com/Product/Goods/96984699">자세히보기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5" id="slid_item">
+              <div class="card h-100">
+                  <!-- NEW badge-->
+                  <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">NEW</div>
+                  <!-- Product image-->
+                  <img class="card-img-top" src="img\book18.jpg" alt="..." />
+                  <!-- Product details-->
+                  <div class="card-body p-4">
+                      <div class="text-center">
+                          <!-- Product name-->
+                          <h5 class="fw-bolder">스포츠 마케팅의 성공 전략</h5>
+                          <!-- Product reviews-->
+                          <div class="d-flex justify-content-center small text-warning mb-2">
+                              <div class="bi-star-fill"></div>
+                              <div class="bi-star-fill"></div>
+                              <div class="bi-star-fill"></div>
+                              <div class="bi-star-fill"></div>
+                              <div class="bi-star-fill"></div>
+                          </div>
+                          <!-- Product price-->
+                          ￦33,000
+                      </div>
+                  </div>
+                  <!-- Product actions-->
+                  <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                      <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="http://www.yes24.com/Product/Goods/118445825">자세히보기</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                <div class="col mb-5" id="slid_item">
+                    <div class="card h-100">
+                        <!-- NEW badge-->
+                        <div class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">HOT</div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="img\book1.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">핸즈온 머신러닝</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                </div>
+                                <!-- Product price-->
+                                ￦49,500
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="http://www.yes24.com/Product/Goods/89959711">자세히보기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5" id="slid_item">
+                  <div class="card h-100">
+                      <!-- NEW badge-->
+                      <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">NEW</div>
+                      <!-- Product image-->
+                      <img class="card-img-top" src="img\book2.jpg" alt="..." />
+                      <!-- Product details-->
+                      <div class="card-body p-4">
+                          <div class="text-center">
+                              <!-- Product name-->
+                              <h5 class="fw-bolder">Do it! 점프 투 파이썬</h5>
+                              <!-- Product reviews-->
+                              <div class="d-flex justify-content-center small text-warning mb-2">
+                                  <div class="bi-star-fill"></div>
+                                  <div class="bi-star-fill"></div>
+                                  <div class="bi-star-fill"></div>
+                                  <div class="bi-star-fill"></div>
+                                  <div class="bi-star-fill"></div>
+                              </div>
+                              <!-- Product price-->
+                              ￦16,920
+                          </div>
+                      </div>
+                      <!-- Product actions-->
+                      <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                          <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="http://www.yes24.com/Product/Goods/74419916">자세히보기</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col mb-5" id="slid_item">
+                <div class="card h-100">
+                    <!-- NEW badge-->
+                    <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">NEW</div>
+                    <!-- Product image-->
+                    <img class="card-img-top" src="img\book3.jpg" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">파이썬 증권 데이터 분석</h5>
+                            <!-- Product reviews-->
+                            <div class="d-flex justify-content-center small text-warning mb-2">
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                            </div>
+                            <!-- Product price-->
+                            ￦28,800
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="http://www.yes24.com/Product/Goods/90578506">자세히보기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5" id="slid_item">
+              <div class="card h-100">
+                  <!-- NEW badge-->
+                  <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">NEW</div>
+                  <!-- Product image-->
+                  <img class="card-img-top" src="img\book4.jpg" alt="..." />
+                  <!-- Product details-->
+                  <div class="card-body p-4">
+                      <div class="text-center">
+                          <!-- Product name-->
+                          <h5 class="fw-bolder">점프 투 장고</h5>
+                          <!-- Product reviews-->
+                          <div class="d-flex justify-content-center small text-warning mb-2">
+                              <div class="bi-star-fill"></div>
+                              <div class="bi-star-fill"></div>
+                              <div class="bi-star-fill"></div>
+                              <div class="bi-star-fill"></div>
+                              <div class="bi-star-fill"></div>
+                          </div>
+                          <!-- Product price-->
+                          ￦17,000
+                      </div>
+                  </div>
+                  <!-- Product actions-->
+                  <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                      <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="http://www.yes24.com/Product/Goods/96376772">자세히보기</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                    <div class="col mb-5" id="slid_item">
+                        <div class="card h-100">
+                            <!-- NEW badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">NEW</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="img\book5.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">이것이 자바다</h5>
+                                    <!-- Product price-->
+                                    ￦32,400
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="http://www.yes24.com/Product/Goods/112208302">자세히보기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5" id="slid_item">
+                      <div class="card h-100">
+                          <!-- NEW badge-->
+                          <div class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">HOT</div>
+                          <!-- Product image-->
+                          <img class="card-img-top" src="img\book6.jpg" alt="..." />
+                          <!-- Product details-->
+                          <div class="card-body p-4">
+                              <div class="text-center">
+                                  <!-- Product name-->
+                                  <h5 class="fw-bolder">2024 MUST 행정법총론</h5>
+                                  <!-- Product reviews-->
+                                  <div class="d-flex justify-content-center small text-warning mb-2">
+                                      <div class="bi-star-fill"></div>
+                                      <div class="bi-star-fill"></div>
+                                      <div class="bi-star-fill"></div>
+                                      <div class="bi-star-fill"></div>
+                                      <div class="bi-star-fill"></div>
+                                  </div>
+                                  <!-- Product price-->
+                                  ￦43,000
+                              </div>
+                          </div>
+                          <!-- Product actions-->
+                          <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                              <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="http://www.yes24.com/Product/Goods/118958130">자세히보기</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col mb-5" id="slid_item">
+                    <div class="card h-100">
+                        <!-- NEW badge-->
+                        <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">NEW</div>
+                        <!-- Product image-->
+                        <img class="card-img-top" src="img\book7.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">선물 옵션투자의 <br>이론과 전략</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                </div>
+                                <!-- Product price-->
+                                ￦41,000
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="http://www.yes24.com/Product/Goods/92316828">자세히보기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5" id="slid_item">
+                  <div class="card h-100">
+                      <!-- NEW badge-->
+                      <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">NEW</div>
+                      <!-- Product image-->
+                      <img class="card-img-top" src="img\book8.jpg" alt="..." />
+                      <!-- Product details-->
+                      <div class="card-body p-4">
+                          <div class="text-center">
+                              <!-- Product name-->
+                              <h5 class="fw-bolder">스포츠 경영</h5>
+                              <!-- Product reviews-->
+                              <div class="d-flex justify-content-center small text-warning mb-2">
+                                  <div class="bi-star-fill"></div>
+                                  <div class="bi-star-fill"></div>
+                                  <div class="bi-star-fill"></div>
+                                  <div class="bi-star-fill"></div>
+                                  <div class="bi-star-fill"></div>
+                              </div>
+                              <!-- Product price-->
+                              ￦18,000
+                          </div>
+                      </div>
+                      <!-- Product actions-->
+                      <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                          <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="http://www.yes24.com/Product/Goods/4164844">자세히보기</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <section class="page-section bg-light" id="portfolioo" style="text-align:center">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">University</h2>
+                <h3 class="section-subheading text-muted">You can find your university</h3>
+            </div>
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4" >
+          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+            <image href="img\snu_logo.png" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
+        </svg>
+        <h2 class="fw-normal">Seoul univ</h2>
+          <p><a class="btn btn-secondary" href="#">자세히 보기»</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                <image href="img\yonsei_logo.png" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
+            </svg>
+          <h2 class="fw-normal">Yonsei univ</h2>
+          <p><a class="btn btn-secondary" href="#">자세히 보기»</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                <image href="img\korea_logo.jpg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
+            </svg>
+          <h2 class="fw-normal">Korea univ</h2>
+          <p><a class="btn btn-secondary" href="#">자세히 보기»</a></p>
+        </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    </body>
+</html>
